@@ -61,15 +61,15 @@ void loop() {
     digitalWrite(RED, LOW);
     digitalWrite(BLUE, LOW);
   }
-  if(keyBlink == 1 && timer == 1500){
+  if(keyBlink == 1 && (timer == 1500 || timer == 4500)){
     digitalWrite(RED, HIGH);
     digitalWrite(BLUE, LOW);
   }
-  if(keyBlink == 1 && timer == 3000){
+  if(keyBlink == 1 && (timer == 3000 || timer == 6000)){
     digitalWrite(RED, LOW);
     digitalWrite(BLUE, HIGH);
   }
-  if(timer == 1000)
+  if(timer == 300)
     digitalWrite(M1, LOW);
     digitalWrite(M2, LOW);
   if(timer > 6000)
